@@ -20,4 +20,27 @@
 
 .image {
   object-fit: cover;
+  border-radius: 10px;
+}
+
+.detail {
+}
+
+.date {
+  color: gray;
+}
+
+.category {
+  color: crimson;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.link {
+  border-bottom: 1px solid crimson;
+  width: max-content;
+  padding: 2px 0px;
 }

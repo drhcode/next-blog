@@ -11,21 +11,23 @@ const Card = () => {
       </div>
       <div className={styles.textContainer}>
         <div className={styles.detail}>
-          <span className={styles.date}>15.09.2023</span>
+          <span className={styles.date}>15.09.2023 - </span>
           <span className={styles.category}>Coding</span>
         </div>
         <Link href='/'>
-          <h1>
+          <h1 className={styles.title}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae alias
             sumenda.
           </h1>
         </Link>
-        <p>
+        <p className={styles.desc}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident labore omnis sit. Modi
           tempora dolor illum accusamus doloribus possimus, ea, distinctio ipsam cumque commodi enim
           reiciendis, quia dolorem expedita placeat?
         </p>
-        <Link href='/'>Read More</Link>
+        <Link href='/' className={styles.link}>
+          Read More
+        </Link>
       </div>
     </div>
   );
