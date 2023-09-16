@@ -18,10 +18,10 @@ const Navbar = () => {
       <div className={styles.links}>
         <ThemeToggle />
         <Link href='/' className={styles.link}>
-          Home
+          home
         </Link>
-        <Link href='/blogs' className={styles.link}>
-          blogs
+        <Link href='/blog' className={styles.link}>
+          blog
         </Link>
         <Link href='/contact' className={styles.link}>
           contact

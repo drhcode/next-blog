@@ -28,6 +28,7 @@
 
 .link {
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 1280px) {

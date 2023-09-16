@@ -13,6 +13,12 @@
   font-size: 28px;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    display: none;
+  }
+}
+
 .items {
   margin-top: 35px;
   margin-bottom: 60px;
