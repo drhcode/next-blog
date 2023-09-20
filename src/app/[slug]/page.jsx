@@ -1,13 +1,17 @@
 import Image from 'next/image';
 import styles from './singlePage.module.css';
 import Menu from '@/components/menu/Menu';
+import Link from 'next/link';
+import Comments from '@/components/comments/Comments';
 
 const singlePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
         <div className={styles.textContainer}>
-          <h1 className={styles.title}>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <Link href='/slug' className={styles.title}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </Link>
           <div className={styles.user}>
             <div className={styles.userImageContainer}>
               <Image src='/p1.jpeg' fill className={styles.avatar} />
@@ -39,6 +43,9 @@ const singlePage = () => {
               Iusto, mollitia distinctio aspernatur, magnam magni reprehenderit ex eius odio ipsa,
               qui asperiores. Odio iure officia amet alias voluptatem?
             </p>
+          </div>
+          <div className={styles.comments}>
+            <Comments />
           </div>
         </div>
         <Menu />

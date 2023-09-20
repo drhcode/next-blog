@@ -7,7 +7,7 @@ import Link from 'next/link';
 const AuthLinks = () => {
   const [open, setOpen] = useState(false);
 
-  const status = 'notauthenticated';
+  const status = 'authenticated';
   return (
     <>
       {status === 'notauthenticated' ? (
@@ -30,8 +30,8 @@ const AuthLinks = () => {
       {open && (
         <div className={styles.responsiveMenu}>
           <Link href='/'>Homepage</Link>
-          <Link href='/'>About</Link>
-          <Link href='/'>Contact</Link>
+          <Link href='/about'>About</Link>
+          <Link href='/contact'>Contact</Link>
           {status === 'notauthenticated' ? (
             <Link href='/login'>Login</Link>
           ) : (

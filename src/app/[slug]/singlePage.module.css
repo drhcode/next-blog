@@ -14,12 +14,14 @@
 .title {
   font-size: 52px;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 
 .user {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .username {
@@ -68,4 +70,39 @@
 .desc p {
   font-size: 20px;
   font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1536px) {
+  .title {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .desc p {
+    font-size: 18px;
+  }
 }
